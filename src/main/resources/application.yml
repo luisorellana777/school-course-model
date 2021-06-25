@@ -1,2 +1,9 @@
-server:
-  port: 9082
+spring:
+  application:
+    name: school-course-model-api
+  cloud:
+    config:
+      name: school-course-model
+      uri: http://localhost:8088
+  profiles:
+    active: dev
